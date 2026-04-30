@@ -148,6 +148,26 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   height: calc(100vh - 48px);
   overflow-y: auto;
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 8px 14px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #f1f3f5;
+}
+.brand-mark {
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(41, 82, 255, 0.18);
+}
+.brand-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.01em;
+}
+
 .side-nav { display: flex; flex-direction: column; gap: 1px; }
 .nav-item {
   display: flex;
