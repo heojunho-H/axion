@@ -34,7 +34,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #2952ff;
+  background: #1f4d3f;
   color: white;
   font-weight: 600;
   font-size: 13px;
@@ -42,7 +42,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   border-radius: 6px;
   height: 30px;
 }
-.btn-create:hover { background: #1f43d9; }
+.btn-create:hover { background: #163a30; }
 .btn-create .plus { font-size: 14px; line-height: 1; }
 .btn-create .caret { margin-left: 2px; }
 
@@ -121,7 +121,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #1e40af;
+  background: #163a30;
   color: white;
   font-weight: 600;
   font-size: 12px;
@@ -151,21 +151,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 9px;
-  padding: 6px 8px 14px;
+  padding: 8px 8px 14px;
   margin-bottom: 6px;
   border-bottom: 1px solid #f1f3f5;
 }
-.brand-mark {
-  flex-shrink: 0;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(41, 82, 255, 0.18);
-}
-.brand-name {
-  font-size: 17px;
-  font-weight: 700;
-  color: #111827;
-  letter-spacing: -0.01em;
+.brand-img {
+  width: 130px;
+  height: auto;
+  display: block;
 }
 
 .side-nav { display: flex; flex-direction: column; gap: 1px; }
@@ -182,10 +175,10 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .nav-item:hover { background: #f3f4f6; }
 .nav-item.active {
-  background: #eef2ff;
-  color: #2952ff;
+  background: #ecf3ef;
+  color: #1f4d3f;
 }
-.nav-item.active svg { color: #2952ff; }
+.nav-item.active svg { color: #1f4d3f; }
 .nav-item svg { flex-shrink: 0; color: #6b7280; }
 .nav-item .chev {
   margin-left: auto;
@@ -266,9 +259,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   position: absolute;
   left: 0; right: 0; bottom: -1px;
   height: 2px;
-  background: #2952ff;
+  background: #1f4d3f;
 }
-.stat-tile.active { background: #f8faff; }
+.stat-tile.active { background: #f6faf8; }
 .stat-tile:hover { background: #f9fafb; }
 .stat-label {
   font-size: 11px;
@@ -302,7 +295,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   padding: 10px 20px 14px;
 }
 .link {
-  color: #2952ff;
+  color: #1f4d3f;
   font-size: 12px;
   font-weight: 500;
 }
@@ -408,7 +401,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   margin-bottom: 6px;
   border: 1px solid transparent;
 }
-.template:hover .thumb { border-color: #c7d2fe; }
+.template:hover .thumb { border-color: #b9d6c8; }
 .thumb-purple    { background: #ede7ff; }
 .thumb-pink      { background: #fce4ec; }
 .thumb-pink-light{ background: #ffebee; }
