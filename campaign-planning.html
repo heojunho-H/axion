@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AXion — 캠페인 기획</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ TOP HEADER ============ -->
+  <header class="top-header">
+    <div class="header-left">
+      <button class="btn-create">
+        <span class="plus">+</span> 만들기
+        <svg class="caret" viewBox="0 0 12 12" width="10" height="10"><path d="M3 4.5l3 3 3-3" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="header-menu">최근 항목 <span class="caret-dark">▾</span></button>
+      <button class="header-menu">즐겨찾기 <span class="caret-dark">▾</span></button>
+      <button class="header-menu">스페이스 <span class="caret-dark">▾</span></button>
+    </div>
+
+    <div class="header-search">
+      <svg class="search-icon" viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" fill="none" stroke="#6b7280" stroke-width="1.5"/><path d="M11 11l3 3" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="검색하거나 질문해 보세요" />
+      <span class="search-shortcut">⌘ K</span>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn">
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="#374151" stroke-width="1.6"><path d="M10 3a5 5 0 015 5v3l1.5 2H3.5L5 11V8a5 5 0 015-5z" stroke-linejoin="round"/><path d="M8 16a2 2 0 004 0" stroke-linecap="round"/></svg>
+        <span class="badge-dot"></span>
+      </button>
+      <div class="avatar">허</div>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <a href="index.html" class="brand" aria-label="AXion 홈">
+        <img src="logo.png" alt="AXion" class="brand-img" />
+      </a>
+      <nav class="side-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10l7-6 7 6v7a1 1 0 01-1 1h-4v-5H8v5H4a1 1 0 01-1-1v-7z" stroke-linejoin="round"/></svg>
+          홈
+        </a>
+        <a href="campaign-planning.html" class="nav-item active">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3.5"/><circle cx="10" cy="10" r="1" fill="currentColor"/></svg>
+          캠페인 기획
+          <span class="nav-badge">AI</span>
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="14" height="12" rx="1.5"/><path d="M3 8h14"/></svg>
+          전체 콘텐츠
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><path d="M8 8a2 2 0 114 0c0 1-1 1.5-2 2v1m0 2v.5" stroke-linecap="round"/></svg>
+          AXion에 질문하기
+        </a>
+
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V8m4 8V4m4 12v-6m4 6V9" stroke-linecap="round"/></svg>
+          제품 분석
+          <span class="chev">▾</span>
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3a10 10 0 010 14M10 3a10 10 0 000 14"/></svg>
+          웹 분석
+          <span class="chev">▾</span>
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="7" r="3"/><path d="M4 17a6 6 0 0112 0" stroke-linecap="round"/></svg>
+          사용자
+          <span class="chev">▾</span>
+        </a>
+        <a href="segments.html" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="10" r="5"/><circle cx="13" cy="10" r="5"/></svg>
+          세그먼트
+          <span class="chev">▾</span>
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="14" height="10" rx="1.5"/><path d="M8 10l3-2v4l-3-2z" fill="currentColor"/></svg>
+          세션 리플레이
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4v8a3 3 0 006 0V4M9 4v6" stroke-linecap="round"/><circle cx="14" cy="14" r="2"/></svg>
+          실험
+          <span class="chev">▾</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="10" cy="5" rx="6" ry="2"/><path d="M4 5v10c0 1.1 2.7 2 6 2s6-.9 6-2V5M4 10c0 1.1 2.7 2 6 2s6-.9 6-2"/></svg>
+          데이터
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="11" y="3" width="6" height="6" rx="1"/><rect x="3" y="11" width="6" height="6" rx="1"/><rect x="11" y="11" width="6" height="6" rx="1"/></svg>
+          객체 관리
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3v14M3 10h14M5.5 5.5l9 9M14.5 5.5l-9 9" stroke-linecap="round"/></svg>
+          릴리스
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main">
+      <!-- Page header -->
+      <div class="cp-header">
+        <div class="cp-header-text">
+          <span class="ai-badge">
+            <svg viewBox="0 0 14 14" width="11" height="11" fill="white"><path d="M7 0l1.5 4L13 5l-4 2.5L7 14l-2-6.5L1 5l4.5-1z"/></svg>
+            AI 분석 기반
+          </span>
+          <h1 class="page-title">캠페인 기획</h1>
+          <p class="page-subtitle">홈 대시보드의 데이터를 분석해 가장 효과적인 CRM 캠페인 목표를 추천했어요. 매칭도가 높을수록 현재 데이터 특성에 잘 맞는 목표입니다.</p>
+        </div>
+        <div class="cp-actions">
+          <span class="cp-meta">마지막 분석: 2026-04-30 18:43</span>
+          <button class="btn-secondary">
+            <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 7a5 5 0 11-1.5-3.5L12 5M12 2v3h-3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            다시 분석
+          </button>
+        </div>
+      </div>
+
+      <!-- Insights row -->
+      <section class="insights-row">
+        <article class="insight-card insight-warn">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#f59e0b" stroke-width="1.8"><path d="M12 3l10 17H2L12 3z" stroke-linejoin="round"/><path d="M12 10v4M12 17v.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="insight-body">
+            <div class="insight-label">핵심 발견 1</div>
+            <h3 class="insight-title">이탈률 30.5%</h3>
+            <p class="insight-desc">업계 평균 25%보다 5.5%p 높음 — 잠재 이탈 사용자가 많은 상태</p>
+          </div>
+        </article>
+
+        <article class="insight-card insight-warn">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#f59e0b" stroke-width="1.8"><path d="M3 17l5-5 4 4 9-9M21 7v6h-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="insight-body">
+            <div class="insight-label">핵심 발견 2</div>
+            <h3 class="insight-title">신규 유입 정체</h3>
+            <p class="insight-desc">최근 24시간 신규 사용자 0명 — 7일 연속 하락 추세</p>
+          </div>
+        </article>
+
+        <article class="insight-card insight-good">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#1f4d3f" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M15 7h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="insight-body">
+            <div class="insight-label">핵심 발견 3</div>
+            <h3 class="insight-title">DAU 8.09% ↑</h3>
+            <p class="insight-desc">활성 사용자 증가세 — 충성도 강화 골든타임</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Goals header -->
+      <div class="goals-head">
+        <h2 class="goals-section-title">추천 캠페인 목표 <span class="goal-count">6개</span></h2>
+        <div class="goals-controls">
+          <span class="sort-label">정렬</span>
+          <div class="filter-select-wrap">
+            <select class="filter-select">
+              <option>매칭도 높은 순</option>
+              <option>우선순위 높은 순</option>
+              <option>예상 효과 큰 순</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goals grid -->
+      <div class="goals-grid">
+        <!-- Goal 1: 이탈 윈백 -->
+        <article class="goal-card priority-high-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>92%</strong></span>
+            </div>
+            <span class="priority-pill priority-high">우선순위 높음</span>
+          </header>
+
+          <h3 class="goal-title">이탈 사용자 윈백 캠페인</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              이탈률이 <strong>30.5%</strong>로 업계 평균(25%)보다 5.5%p 높습니다.
+              최근 30일간 미접속한 과거 구매자가 많아, 적절한 메시지로 재참여를 유도할 수 있어요.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">최근 30일 미접속 + 과거 구매</div>
+              <div class="goal-meta-sub">≈ 12,400명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">재방문률 +18%</div>
+              <div class="goal-meta-sub impact-sub">매출 +12%</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">이메일</span>
+              <span class="channel-chip">푸시</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+
+        <!-- Goal 2: 첫 구매 전환 -->
+        <article class="goal-card priority-high-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>88%</strong></span>
+            </div>
+            <span class="priority-pill priority-high">우선순위 높음</span>
+          </header>
+
+          <h3 class="goal-title">첫 구매 전환 가속</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              구매 전환율 <strong>9.14%</strong>는 카테고리 평균(12%) 대비 낮은 편입니다.
+              가입 후 7일 내 미구매 사용자에게 첫 구매 트리거를 제공해 전환을 가속할 수 있어요.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">가입 7일 이내 + 미구매</div>
+              <div class="goal-meta-sub">≈ 8,200명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">첫 구매 +25%</div>
+              <div class="goal-meta-sub impact-sub">GMV +8%</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">푸시</span>
+              <span class="channel-chip">웹 푸시</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+
+        <!-- Goal 3: 신규 활성화 -->
+        <article class="goal-card priority-high-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>85%</strong></span>
+            </div>
+            <span class="priority-pill priority-high">우선순위 높음</span>
+          </header>
+
+          <h3 class="goal-title">신규 사용자 활성화</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              최근 24시간 신규 사용자 <strong>0명</strong>, 7일 연속 정체입니다.
+              이미 가입했지만 활성화되지 않은 사용자에게 온보딩 유도 메시지를 보내 활성률을 끌어올릴 수 있어요.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">신규 가입 + 핵심 액션 미수행</div>
+              <div class="goal-meta-sub">≈ 1,800명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">활성화율 +30%</div>
+              <div class="goal-meta-sub impact-sub">7일 리텐션 +9%</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">이메일</span>
+              <span class="channel-chip">인앱</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+
+        <!-- Goal 4: 충성 고객 리텐션 -->
+        <article class="goal-card priority-mid-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>78%</strong></span>
+            </div>
+            <span class="priority-pill priority-mid">우선순위 중간</span>
+          </header>
+
+          <h3 class="goal-title">충성 고객 리텐션 강화</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              DAU가 전월 대비 <strong>+8.09%</strong> 증가하며 활성 사용자가 늘고 있습니다.
+              지금이 충성 고객의 락인을 강화할 골든타임 — 멤버십·리워드 메시지 효과가 클 시점이에요.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">주 3회 이상 사용 + 누적 구매 2회+</div>
+              <div class="goal-meta-sub">≈ 24,500명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">30일 리텐션 +6%</div>
+              <div class="goal-meta-sub impact-sub">재구매율 +14%</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">푸시</span>
+              <span class="channel-chip">인앱</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+
+        <!-- Goal 5: 세션 길이 -->
+        <article class="goal-card priority-mid-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>72%</strong></span>
+            </div>
+            <span class="priority-pill priority-mid">우선순위 중간</span>
+          </header>
+
+          <h3 class="goal-title">세션당 페이지 뷰 확장</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              세션당 페이지 뷰가 <strong>0.31</strong>로 카테고리 중간값(0.6)보다 낮습니다.
+              연관 콘텐츠 추천·추천 상품 노출로 한 세션 내 탐색 깊이를 늘릴 여지가 큽니다.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">최근 7일 활성 사용자</div>
+              <div class="goal-meta-sub">≈ 53,100명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">PV/세션 +40%</div>
+              <div class="goal-meta-sub impact-sub">광고 매출 +5%</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">인앱</span>
+              <span class="channel-chip">개인화 추천</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+
+        <!-- Goal 6: VIP -->
+        <article class="goal-card priority-low-card">
+          <header class="goal-header">
+            <div class="goal-meta">
+              <span class="ai-pill">✨ AI 추천</span>
+              <span class="match-score">매칭도 <strong>65%</strong></span>
+            </div>
+            <span class="priority-pill priority-low">우선순위 낮음</span>
+          </header>
+
+          <h3 class="goal-title">VIP 고객 프리미엄 오퍼</h3>
+
+          <div class="goal-section">
+            <div class="goal-section-label">왜 추천하나요?</div>
+            <p class="goal-reason">
+              구매 전환자 중 상위 10%가 전체 매출의 41%를 책임지는 구조입니다.
+              핵심 고객에게 우선 액세스·전용 혜택을 제공해 ARPU와 NPS를 동시에 끌어올릴 수 있어요.
+            </p>
+          </div>
+
+          <div class="goal-grid-meta">
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">대상 세그먼트</div>
+              <div class="goal-meta-value">누적 구매 5회 이상</div>
+              <div class="goal-meta-sub">≈ 920명</div>
+            </div>
+            <div class="goal-meta-item">
+              <div class="goal-meta-label">예상 효과</div>
+              <div class="goal-meta-value impact">ARPU +22%</div>
+              <div class="goal-meta-sub impact-sub">NPS +11pt</div>
+            </div>
+          </div>
+
+          <div class="goal-channels">
+            <span class="goal-section-label inline">추천 채널</span>
+            <div class="channel-chips">
+              <span class="channel-chip">이메일</span>
+              <span class="channel-chip">개별 SMS</span>
+            </div>
+          </div>
+
+          <a href="segments.html" class="btn-primary goal-cta">이 목표로 캠페인 만들기 →</a>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
